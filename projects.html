@@ -1,472 +1,1020 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects — JYGA Architects</title>
-<meta name="description" content="Browse the full JYGA Architects project archive — search, filter and sort by type and location.">
-<link rel="icon" href="images/logo/jyga-mark.png">
-<link rel="stylesheet" href="css/style.css">
-<script>document.documentElement.classList.add('js');</script>
-</head>
-<body>
-<a href="#main" class="skip-link">Skip to content</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects — JYGA Architects</title>
+    <meta
+      name="description"
+      content="Browse the full JYGA Architects project archive — search, filter and sort by type and location."
+    />
+    <link rel="icon" href="images/logo/jyga-mark.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
 
-<header class="site-header">
-  <div class="container">
-    <a href="index.html" class="brand">
-      <img class="brand-mark" src="images/logo/jyga-mark.png" alt="">
-      <span>jyga<small>Architects</small></span>
-    </a>
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="brand">
+          <img class="brand-mark" src="images/logo/jyga-mark.png" alt="" />
+          <span>jyga<small>Architects</small></span>
+        </a>
 
-    <div class="nav-actions">
-      <button class="nav-icon-btn" id="searchTrigger" aria-label="Search">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-      </button>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<nav class="site-nav-overlay" aria-label="Primary">
-  <div>
-    <div class="nav-overlay-search">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-      <input type="text" id="overlaySearchInput" placeholder="Search projects…" autocomplete="off">
-    </div>
-    <div class="nav-overlay-links">
-      <a href="index.html"><span class="idx">00</span> Home</a>
-      <a href="projects.html" class="is-active"><span class="idx">01</span> Projects</a>
-      <a href="about.html"><span class="idx">02</span> About</a>
-      <a href="services.html"><span class="idx">03</span> Services</a>
-      <a href="people.html"><span class="idx">04</span> People</a>
-      <a href="news.html"><span class="idx">05</span> News</a>
-      <a href="careers.html"><span class="idx">06</span> Careers</a>
-      <a href="contact.html"><span class="idx">07</span> Contact</a>
-    </div>
-  </div>
-  <div class="nav-overlay-foot">
-    <div class="nav-overlay-contact">
-      <a href="mailto:jyga@jyga-architects.com">jyga@jyga-architects.com</a>
-      <a href="tel:+23276628732">+232 76 628 732</a>
-    </div>
-    <div class="nav-overlay-social">
-      <a href="#" aria-label="LinkedIn">LinkedIn</a>
-      <a href="#" aria-label="Instagram">Instagram</a>
-    </div>
-  </div>
-</nav>
-
-<main id="main">
-  <section class="page-header" style="height:42vh; min-height:320px;">
-    <img src="images/projects/haven-disaster-recovery.jpg" alt="">
-    <div class="page-header-content">
-      <div class="breadcrumb"><a href="index.html">Home</a> / Projects</div>
-      <p class="eyebrow">Selected Work</p>
-      <h1>Projects</h1>
-    </div>
-  </section>
-
-  <div class="container">
-    <div class="projects-toolbar reveal">
-      <div class="projects-search">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-        <input type="text" id="projectsSearchInput" placeholder="Search projects…" autocomplete="off">
-      </div>
-      <div class="projects-controls">
-        <select class="projects-select" id="projectsTypeFilter">
-          <option value="">All project types</option>
-          <option value="Civic">Civic</option>
-<option value="Commercial">Commercial</option>
-<option value="Concept">Concept</option>
-<option value="Ecclesiastical">Ecclesiastical</option>
-<option value="Industrial">Industrial</option>
-<option value="Institutional">Institutional</option>
-<option value="Master Planning">Master Planning</option>
-<option value="Residential">Residential</option>
-<option value="Retail">Retail</option>
-        </select>
-        <select class="projects-select" id="projectsLocationFilter">
-          <option value="">All locations</option>
-          <option value="Freetown">Freetown</option>
-<option value="Sierra Leone">Sierra Leone</option>
-        </select>
-        <div class="projects-sort">
-          <button class="is-active" data-sort="featured">Featured</button>
-          <button data-sort="alpha">Alphabetical</button>
+        <div class="nav-actions">
+          <button class="nav-icon-btn" id="searchTrigger" aria-label="Search">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <path d="M21 21l-4.3-4.3" />
+            </svg>
+          </button>
+          <button
+            class="nav-toggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span>
+          </button>
         </div>
       </div>
-      <div class="projects-count" id="projectsCount">16 Projects</div>
-    </div>
+    </header>
 
-    <div class="projects-grid" id="projectsGrid">
-        <a class="project-card" href="project-leed.html" data-title="WBG Sierra Leone Country Office" data-type="Institutional" data-location="Freetown" data-order="0">
-          <div class="project-card-media">
-            <img src="images/hero/wbg-office-real.jpg" alt="WBG Sierra Leone Country Office">
-            <span class="project-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-          </div>
-          <div class="project-card-title">WBG Sierra Leone Country Office</div>
-          <div class="project-card-meta">2025 &middot; Freetown</div>
-        </a>
-        <a class="project-card" href="project-nasscorp.html" data-title="NASSCORP Offices" data-type="Commercial" data-location="Sierra Leone" data-order="1">
-          <div class="project-card-media">
-            <img src="images/projects/nasscorp.jpg" alt="NASSCORP Offices">
-            <span class="project-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-          </div>
-          <div class="project-card-title">NASSCORP Offices</div>
-          <div class="project-card-meta">Concept &middot; Sierra Leone</div>
-        </a>
-        <a class="project-card" href="project-haven.html" data-title="HAVEN Disaster Recovery Forum" data-type="Civic" data-location="Sierra Leone" data-order="2">
-          <div class="project-card-media">
-            <img src="images/projects/haven-disaster-recovery.jpg" alt="HAVEN Disaster Recovery Forum">
-            <span class="project-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-          </div>
-          <div class="project-card-title">HAVEN Disaster Recovery Forum</div>
-          <div class="project-card-meta">Concept &middot; Sierra Leone</div>
-        </a>
-        <a class="project-card" href="project-chapel.html" data-title="Chapel & Stained-Glass Facade" data-type="Ecclesiastical" data-location="Sierra Leone" data-order="3">
-          <div class="project-card-media">
-            <img src="images/projects/church-facade.jpg" alt="Chapel & Stained-Glass Facade">
-            <span class="project-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-          </div>
-          <div class="project-card-title">Chapel & Stained-Glass Facade</div>
-          <div class="project-card-meta">Concept &middot; Sierra Leone</div>
-        </a>
-        <a class="project-card" href="project-motor-city.html" data-title="Motor City Showroom" data-type="Retail" data-location="Freetown" data-order="4">
-          <div class="project-card-media">
-            <img src="images/projects/motor-city.jpg" alt="Motor City Showroom">
-            <span class="project-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-          </div>
-          <div class="project-card-title">Motor City Showroom</div>
-          <div class="project-card-meta">Concept &middot; Freetown</div>
-        </a>
-        <a class="project-card" href="project-comforta-house.html" data-title="Comforta House" data-type="Residential" data-location="Freetown" data-order="5">
-          <div class="project-card-media">
-            <img src="images/projects/comforta-house.jpg" alt="Comforta House">
-            <span class="project-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-          </div>
-          <div class="project-card-title">Comforta House</div>
-          <div class="project-card-meta">Concept &middot; Freetown</div>
-        </a>
-        <a class="project-card" href="project-belle-lens.html" data-title="Belle Lens Building" data-type="Commercial" data-location="Sierra Leone" data-order="6">
-          <div class="project-card-media">
-            <img src="images/projects/belle-lens.jpg" alt="Belle Lens Building">
-            <span class="project-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-          </div>
-          <div class="project-card-title">Belle Lens Building</div>
-          <div class="project-card-meta">Completed &middot; Sierra Leone</div>
-        </a>
-        <a class="project-card" href="project-beltrust.html" data-title="Beltrust Building" data-type="Commercial" data-location="Sierra Leone" data-order="7">
-          <div class="project-card-media">
-            <img src="images/projects/bathurst-street.jpg" alt="Beltrust Building">
-            <span class="project-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-          </div>
-          <div class="project-card-title">Beltrust Building</div>
-          <div class="project-card-meta">Completed &middot; Sierra Leone</div>
-        </a>
-        <a class="project-card" href="project-hangar.html" data-title="Hangar-Form Facility" data-type="Industrial" data-location="Sierra Leone" data-order="8">
-          <div class="project-card-media">
-            <img src="images/projects/hangar-facility.jpg" alt="Hangar-Form Facility">
-            <span class="project-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-          </div>
-          <div class="project-card-title">Hangar-Form Facility</div>
-          <div class="project-card-meta">Concept &middot; Sierra Leone</div>
-        </a>
-        <a class="project-card" href="project-office-complex.html" data-title="Office Complex" data-type="Commercial" data-location="Sierra Leone" data-order="9">
-          <div class="project-card-media">
-            <img src="images/projects/office-complex.jpg" alt="Office Complex">
-            <span class="project-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-          </div>
-          <div class="project-card-title">Office Complex</div>
-          <div class="project-card-meta">Completed &middot; Sierra Leone</div>
-        </a>
-        <a class="project-card" href="project-office-block.html" data-title="Office Block" data-type="Commercial" data-location="Sierra Leone" data-order="10">
-          <div class="project-card-media">
-            <img src="images/projects/office-block.jpg" alt="Office Block">
-            <span class="project-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-          </div>
-          <div class="project-card-title">Office Block</div>
-          <div class="project-card-meta">Concept &middot; Sierra Leone</div>
-        </a>
-        <a class="project-card" href="project-concept-tower.html" data-title="Multi-Tier Concept Building" data-type="Concept" data-location="Sierra Leone" data-order="11">
-          <div class="project-card-media">
-            <img src="images/projects/concept-tower.jpg" alt="Multi-Tier Concept Building">
-            <span class="project-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-          </div>
-          <div class="project-card-title">Multi-Tier Concept Building</div>
-          <div class="project-card-meta">Concept &middot; Sierra Leone</div>
-        </a>
-        <a class="project-card" href="project-urban-tower.html" data-title="Urban Tower" data-type="Commercial" data-location="Freetown" data-order="12">
-          <div class="project-card-media">
-            <img src="images/projects/urban-tower.jpg" alt="Urban Tower">
-            <span class="project-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-          </div>
-          <div class="project-card-title">Urban Tower</div>
-          <div class="project-card-meta">Completed &middot; Freetown</div>
-        </a>
-        <a class="project-card" href="project-blue-tower.html" data-title="Blue Tower" data-type="Commercial" data-location="Sierra Leone" data-order="13">
-          <div class="project-card-media">
-            <img src="images/hero/blue-tower.jpg" alt="Blue Tower">
-            <span class="project-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-          </div>
-          <div class="project-card-title">Blue Tower</div>
-          <div class="project-card-meta">Completed &middot; Sierra Leone</div>
-        </a>
-        <a class="project-card" href="project-wbg-early.html" data-title="WBG — Early Design Study" data-type="Institutional" data-location="Freetown" data-order="14">
-          <div class="project-card-media">
-            <img src="images/hero/wbg-render.jpg" alt="WBG — Early Design Study">
-            <span class="project-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-          </div>
-          <div class="project-card-title">WBG — Early Design Study</div>
-          <div class="project-card-meta">Concept &middot; Freetown</div>
-        </a>
-        <a class="project-card" href="project-site-masterplan.html" data-title="Site Masterplan" data-type="Master Planning" data-location="Sierra Leone" data-order="15">
-          <div class="project-card-media">
-            <img src="images/projects/site-masterplan.jpg" alt="Site Masterplan">
-            <span class="project-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
-          </div>
-          <div class="project-card-title">Site Masterplan</div>
-          <div class="project-card-meta">Concept &middot; Sierra Leone</div>
-        </a>
-    </div>
-    <div class="projects-empty" id="projectsEmpty">No projects match your search — try a different keyword or filter.</div>
-  </div>
-
-  <section class="section section--stone">
-    <div class="container">
-      <div class="section-head reveal">
-        <div>
-          <p class="eyebrow">Selected Portfolio, 1978–Present</p>
-          <h2 class="h2">The wider archive.</h2>
+    <nav class="site-nav-overlay" aria-label="Primary">
+      <div>
+        <div class="nav-overlay-search">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4.3-4.3" />
+          </svg>
+          <input
+            type="text"
+            id="overlaySearchInput"
+            placeholder="Search projects…"
+            autocomplete="off"
+          />
         </div>
-        <p class="section-desc">JYGA has been involved in all types of projects, from private residential to businesses to government projects — the list below predates our current photo archive.</p>
-      </div>
-
-      <div class="project-list reveal">
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Sierra Leone</div>
-            <div class="project-row-title">NASSIT Regional Offices</div>
-            <div class="project-row-loc">Bo, Kenema & Makeni</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Sierra Leone</div>
-            <div class="project-row-title">Sierra Leone Commercial Bank</div>
-            <div class="project-row-loc">Kenema</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Sierra Leone</div>
-            <div class="project-row-title">UNICEF Offices (Refurbishment)</div>
-            <div class="project-row-loc">New England, Freetown</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Sierra Leone</div>
-            <div class="project-row-title">Conchita House</div>
-            <div class="project-row-loc">500 sqm office space</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Sierra Leone</div>
-            <div class="project-row-title">Marie Stopes Medical Centre</div>
-            <div class="project-row-loc">Aberdeen Road, Freetown</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Sierra Leone</div>
-            <div class="project-row-title">St. George's Cathedral (Refurbishment)</div>
-            <div class="project-row-loc">Freetown</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Sierra Leone</div>
-            <div class="project-row-title">Seafarers Complex — Restaurant & Business Centre</div>
-            <div class="project-row-loc">Freetown</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Sierra Leone</div>
-            <div class="project-row-title">Conference Hall</div>
-            <div class="project-row-loc">Bishop's Court</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Sierra Leone</div>
-            <div class="project-row-title">10-Floor Office Block, Charlotte Street</div>
-            <div class="project-row-loc">UBA Premises, Freetown</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Sierra Leone</div>
-            <div class="project-row-title">Shell Head Offices</div>
-            <div class="project-row-loc">Kissy, Freetown (now Safecon Sierra Leone)</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Sierra Leone</div>
-            <div class="project-row-title">U.S. Embassy Flats (Refurbishment)</div>
-            <div class="project-row-loc">Signal Hill, Freetown</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Sierra Leone</div>
-            <div class="project-row-title">British Council</div>
-            <div class="project-row-loc">Sierra Leone</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Sierra Leone</div>
-            <div class="project-row-title">Lumley Beach Development Project</div>
-            <div class="project-row-loc">Master Plan for the National Tourist Board</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Botswana</div>
-            <div class="project-row-title">Chancery Building, South African High Commission</div>
-            <div class="project-row-loc">Gaborone</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Botswana</div>
-            <div class="project-row-title">80-Bed Hotel, Casino & Conference Unit</div>
-            <div class="project-row-loc">River Walk, Gaborone</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Botswana</div>
-            <div class="project-row-title">Shopping Centre</div>
-            <div class="project-row-loc">Gaborone</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Botswana</div>
-            <div class="project-row-title">Offices & Retail Space, Botswana Council of Churches</div>
-            <div class="project-row-loc">3,000 sqm, Gaborone</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Botswana</div>
-            <div class="project-row-title">Sports Training Centre, Botswana Football Association</div>
-            <div class="project-row-loc">National Stadium Site, Gaborone</div>
-          </div>
-        </div>
-        <div class="project-row">
-          <div></div>
-          <div>
-            <div class="project-row-tag">Botswana</div>
-            <div class="project-row-title">Office & Retail Development</div>
-            <div class="project-row-loc">1,500 sqm, for Former President & Lady Masire</div>
-          </div>
+        <div class="nav-overlay-links">
+          <a href="index.html"><span class="idx">00</span> Home</a>
+          <a href="projects.html" class="is-active"
+            ><span class="idx">01</span> Projects</a
+          >
+          <a href="about.html"><span class="idx">02</span> About</a>
+          <a href="services.html"><span class="idx">03</span> Services</a>
+          <a href="people.html"><span class="idx">04</span> People</a>
+          <a href="news.html"><span class="idx">05</span> News</a>
+          <a href="careers.html"><span class="idx">06</span> Careers</a>
+          <a href="testimonials.html"
+            ><span class="idx">07</span> Testimonials</a
+          >
+          <a href="booking.html"
+            ><span class="idx">08</span> Book Appointment</a
+          >
+          <a href="contact.html"><span class="idx">09</span> Contact</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="cta-band">
-    <div class="container">
-      <h2 class="h2">Have a brief in mind?</h2>
-      <a href="contact.html" class="btn btn--light">
-        Start a conversation
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-top">
-    <div class="footer-brand">
-      <a href="index.html" class="brand">
-        <img class="brand-mark" src="images/logo/jyga-mark.png" alt="">
-        <span>jyga<small>Architects</small></span>
-      </a>
-      <p>Jarrett-Yaskey, Garber &amp; Associates: Architects. A Freetown-based practice designing for West Africa since 1978.</p>
-      <div class="footer-social">
-        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 11-4-.002 2 2 0 014 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48z"/></svg></a>
-        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      <div class="nav-overlay-foot">
+        <div class="nav-overlay-contact">
+          <a href="mailto:jyga@jyga-architects.com">jyga@jyga-architects.com</a>
+          <a href="tel:+23276628732">+232 76 628 732</a>
+        </div>
+        <div class="nav-overlay-social">
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+        </div>
       </div>
-    </div>
+    </nav>
 
-    <div class="footer-col">
-      <p class="footer-heading">Navigate</p>
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="people.html">People</a>
-      <a href="news.html">News</a>
-      <a href="careers.html">Careers</a>
-    </div>
+    <main id="main">
+      <section class="page-header" style="height: 42vh; min-height: 320px">
+        <img src="images/projects/project-hero.jpg" alt="" />
+        <div class="page-header-content">
+          <div class="breadcrumb"><a href="index.html">Home</a> / Projects</div>
+          <p class="eyebrow">Selected Work</p>
+          <h1>Projects</h1>
+        </div>
+      </section>
 
-    <div class="footer-col">
-      <p class="footer-heading">Offices</p>
-      <div class="footer-office">
-        <strong>Sierra Leone</strong>
-        <address>2 Main Motor Road, Congo Cross, Freetown</address>
+      <div class="container">
+        <div class="projects-toolbar reveal">
+          <div class="projects-search">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <path d="M21 21l-4.3-4.3" />
+            </svg>
+            <input
+              type="text"
+              id="projectsSearchInput"
+              placeholder="Search projects…"
+              autocomplete="off"
+            />
+          </div>
+          <div class="projects-controls">
+            <select class="projects-select" id="projectsTypeFilter">
+              <option value="">All project types</option>
+              <option value="Civic">Civic</option>
+              <option value="Commercial">Commercial</option>
+              <option value="Concept">Concept</option>
+              <option value="Ecclesiastical">Ecclesiastical</option>
+              <option value="Hospitality">Hospitality</option>
+              <option value="Industrial">Industrial</option>
+              <option value="Institutional">Institutional</option>
+              <option value="Master Planning">Master Planning</option>
+              <option value="Residential">Residential</option>
+              <option value="Retail">Retail</option>
+            </select>
+            <select class="projects-select" id="projectsLocationFilter">
+              <option value="">All locations</option>
+              <option value="Freetown">Freetown</option>
+              <option value="Sierra Leone">Sierra Leone</option>
+              <option value="Mozambique">Mozambique</option>
+              <option value="Seychelles">Seychelles</option>
+              <option value="Zambia">Zambia</option>
+              <option value="Nigeria">Nigeria</option>
+            </select>
+            <div class="projects-sort">
+              <button class="is-active" data-sort="featured">Featured</button>
+              <button data-sort="alpha">Alphabetical</button>
+            </div>
+          </div>
+          <div class="projects-count" id="projectsCount">22 Projects</div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <a
+            class="project-card"
+            href="project-leed.html"
+            data-title="WBG Sierra Leone Country Office"
+            data-type="Institutional"
+            data-location="Freetown"
+            data-order="0"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/hero/wbg-office-real.jpg"
+                alt="WBG Sierra Leone Country Office"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">
+              WBG Sierra Leone Country Office
+            </div>
+            <div class="project-card-meta">2025 &middot; Freetown</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-nasscorp.html"
+            data-title="NASSCORP Offices"
+            data-type="Commercial"
+            data-location="Sierra Leone"
+            data-order="1"
+          >
+            <div class="project-card-media">
+              <img src="images/projects/nasscorp.jpg" alt="NASSCORP Offices" />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">NASSCORP Offices</div>
+            <div class="project-card-meta">Concept &middot; Sierra Leone</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-haven.html"
+            data-title="HAVEN Disaster Recovery Forum"
+            data-type="Civic"
+            data-location="Sierra Leone"
+            data-order="2"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/projects/haven-disaster-recovery.jpg"
+                alt="HAVEN Disaster Recovery Forum"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">HAVEN Disaster Recovery Forum</div>
+            <div class="project-card-meta">Concept &middot; Sierra Leone</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-cathedral.html"
+            data-title="Lawrence Anglican Cathedral"
+            data-type="Ecclesiastical"
+            data-location="Mozambique"
+            data-order="3"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/projects/cathedral-exterior.jpg"
+                alt="Lawrence Anglican Cathedral"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">Lawrence Anglican Cathedral</div>
+            <div class="project-card-meta">
+              Completed &middot; Maputo, Mozambique
+            </div>
+          </a>
+          <a
+            class="project-card"
+            href="project-motor-city.html"
+            data-title="Motor City Showroom"
+            data-type="Retail"
+            data-location="Freetown"
+            data-order="4"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/projects/motor-city.jpg"
+                alt="Motor City Showroom"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">Motor City Showroom</div>
+            <div class="project-card-meta">Concept &middot; Freetown</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-comforta-house.html"
+            data-title="Comforta House"
+            data-type="Residential"
+            data-location="Freetown"
+            data-order="5"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/projects/comforta-house.jpg"
+                alt="Comforta House"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">Comforta House</div>
+            <div class="project-card-meta">Concept &middot; Freetown</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-belle-lens.html"
+            data-title="Belle Lens Building"
+            data-type="Commercial"
+            data-location="Sierra Leone"
+            data-order="6"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/projects/belle-lens.jpg"
+                alt="Belle Lens Building"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">Belle Lens Building</div>
+            <div class="project-card-meta">Completed &middot; Sierra Leone</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-beltrust.html"
+            data-title="Beltrust Building"
+            data-type="Commercial"
+            data-location="Sierra Leone"
+            data-order="7"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/projects/bathurst-street.jpg"
+                alt="Beltrust Building"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">Beltrust Building</div>
+            <div class="project-card-meta">Completed &middot; Sierra Leone</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-hangar.html"
+            data-title="Hangar-Form Facility"
+            data-type="Industrial"
+            data-location="Sierra Leone"
+            data-order="8"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/projects/hangar-facility.jpg"
+                alt="Hangar-Form Facility"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">Hangar-Form Facility</div>
+            <div class="project-card-meta">Concept &middot; Sierra Leone</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-office-complex.html"
+            data-title="Office Complex"
+            data-type="Commercial"
+            data-location="Sierra Leone"
+            data-order="9"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/projects/office-complex.jpg"
+                alt="Office Complex"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">Office Complex</div>
+            <div class="project-card-meta">Completed &middot; Sierra Leone</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-office-block.html"
+            data-title="Office Block"
+            data-type="Commercial"
+            data-location="Sierra Leone"
+            data-order="10"
+          >
+            <div class="project-card-media">
+              <img src="images/projects/office-block.jpg" alt="Office Block" />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">Office Block</div>
+            <div class="project-card-meta">Concept &middot; Sierra Leone</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-concept-tower.html"
+            data-title="Multi-Tier Concept Building"
+            data-type="Concept"
+            data-location="Sierra Leone"
+            data-order="11"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/projects/concept-tower.jpg"
+                alt="Multi-Tier Concept Building"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">Multi-Tier Concept Building</div>
+            <div class="project-card-meta">Concept &middot; Sierra Leone</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-urban-tower.html"
+            data-title="Urban Tower"
+            data-type="Commercial"
+            data-location="Freetown"
+            data-order="12"
+          >
+            <div class="project-card-media">
+              <img src="images/projects/urban-tower.jpg" alt="Urban Tower" />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">Urban Tower</div>
+            <div class="project-card-meta">Completed &middot; Freetown</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-blue-tower.html"
+            data-title="Blue Tower"
+            data-type="Commercial"
+            data-location="Sierra Leone"
+            data-order="13"
+          >
+            <div class="project-card-media">
+              <img src="images/hero/blue-tower.jpg" alt="Blue Tower" />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">Blue Tower</div>
+            <div class="project-card-meta">Completed &middot; Sierra Leone</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-wbg-early.html"
+            data-title="WBG — Early Design Study"
+            data-type="Institutional"
+            data-location="Freetown"
+            data-order="14"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/hero/wbg-render.jpg"
+                alt="WBG — Early Design Study"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">WBG — Early Design Study</div>
+            <div class="project-card-meta">Concept &middot; Freetown</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-site-masterplan.html"
+            data-title="Site Masterplan"
+            data-type="Master Planning"
+            data-location="Sierra Leone"
+            data-order="15"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/projects/site-masterplan.jpg"
+                alt="Site Masterplan"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">Site Masterplan</div>
+            <div class="project-card-meta">Concept &middot; Sierra Leone</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-central-bank-seychelles.html"
+            data-title="Central Bank Disaster Recovery Centre"
+            data-type="Institutional"
+            data-location="Seychelles"
+            data-order="16"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/projects/central-bank-seychelles.jpg"
+                alt="Central Bank Disaster Recovery Centre"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">
+              Central Bank Disaster Recovery Centre
+            </div>
+            <div class="project-card-meta">Completed &middot; Seychelles</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-holiday-resort.html"
+            data-title="Holiday Resort"
+            data-type="Hospitality"
+            data-location=""
+            data-order="17"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/projects/holiday-resort.jpg"
+                alt="Holiday Resort"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">Holiday Resort</div>
+            <div class="project-card-meta">Completed</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-emerald-hotel.html"
+            data-title="The Emerald Hotel"
+            data-type="Hospitality"
+            data-location="Zambia"
+            data-order="18"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/projects/emerald-hotel-hero.jpg"
+                alt="The Emerald Hotel"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">The Emerald Hotel</div>
+            <div class="project-card-meta">Completed &middot; Zambia</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-bintumani.html"
+            data-title="Bintumani International Conference Centre"
+            data-type="Civic"
+            data-location="Freetown"
+            data-order="19"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/projects/bintumani-exterior.jpg"
+                alt="Bintumani International Conference Centre"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">
+              Bintumani International Conference Centre
+            </div>
+            <div class="project-card-meta">Refurbishment &middot; Freetown</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-private-office-nigeria.html"
+            data-title="Private Office"
+            data-type="Commercial"
+            data-location="Nigeria"
+            data-order="20"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/projects/private-office-nigeria.jpg"
+                alt="Private Office"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">Private Office</div>
+            <div class="project-card-meta">Completed &middot; Nigeria</div>
+          </a>
+          <a
+            class="project-card"
+            href="project-lumley-beach.html"
+            data-title="Lumley Beach Development"
+            data-type="Master Planning"
+            data-location="Freetown"
+            data-order="21"
+          >
+            <div class="project-card-media">
+              <img
+                src="images/projects/lumley-beach.jpg"
+                alt="Lumley Beach Development"
+              />
+              <span class="project-card-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" /></svg
+              ></span>
+            </div>
+            <div class="project-card-title">Lumley Beach Development</div>
+            <div class="project-card-meta">Master Plan &middot; Freetown</div>
+          </a>
+        </div>
+        <div class="projects-empty" id="projectsEmpty">
+          No projects match your search — try a different keyword or filter.
+        </div>
       </div>
-      <div class="footer-office">
-        <strong>Botswana</strong>
-        <address>DMD-Mosaic Architects, Plot 454, Ext. 4, Gaborone</address>
+
+      <section class="section section--stone">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <p class="eyebrow">Selected Portfolio, 1978–Present</p>
+              <h2 class="h2">The wider archive.</h2>
+            </div>
+            <p class="section-desc">
+              JYGA has been involved in all types of projects, from private
+              residential to businesses to government projects — the list below
+              predates our current photo archive.
+            </p>
+          </div>
+
+          <div class="project-list reveal">
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Sierra Leone</div>
+                <div class="project-row-title">NASSIT Regional Offices</div>
+                <div class="project-row-loc">Bo, Kenema & Makeni</div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Sierra Leone</div>
+                <div class="project-row-title">
+                  Sierra Leone Commercial Bank
+                </div>
+                <div class="project-row-loc">Kenema</div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Sierra Leone</div>
+                <div class="project-row-title">
+                  UNICEF Offices (Refurbishment)
+                </div>
+                <div class="project-row-loc">New England, Freetown</div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Sierra Leone</div>
+                <div class="project-row-title">Conchita House</div>
+                <div class="project-row-loc">500 sqm office space</div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Sierra Leone</div>
+                <div class="project-row-title">Marie Stopes Medical Centre</div>
+                <div class="project-row-loc">Aberdeen Road, Freetown</div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Sierra Leone</div>
+                <div class="project-row-title">
+                  St. George's Cathedral (Refurbishment)
+                </div>
+                <div class="project-row-loc">Freetown</div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Sierra Leone</div>
+                <div class="project-row-title">
+                  Seafarers Complex — Restaurant & Business Centre
+                </div>
+                <div class="project-row-loc">Freetown</div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Sierra Leone</div>
+                <div class="project-row-title">Conference Hall</div>
+                <div class="project-row-loc">Bishop's Court</div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Sierra Leone</div>
+                <div class="project-row-title">
+                  10-Floor Office Block, Charlotte Street
+                </div>
+                <div class="project-row-loc">UBA Premises, Freetown</div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Sierra Leone</div>
+                <div class="project-row-title">Shell Head Offices</div>
+                <div class="project-row-loc">
+                  Kissy, Freetown (now Safecon Sierra Leone)
+                </div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Sierra Leone</div>
+                <div class="project-row-title">
+                  U.S. Embassy Flats (Refurbishment)
+                </div>
+                <div class="project-row-loc">Signal Hill, Freetown</div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Sierra Leone</div>
+                <div class="project-row-title">British Council</div>
+                <div class="project-row-loc">Sierra Leone</div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Botswana</div>
+                <div class="project-row-title">
+                  Chancery Building, South African High Commission
+                </div>
+                <div class="project-row-loc">Gaborone</div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Botswana</div>
+                <div class="project-row-title">
+                  80-Bed Hotel, Casino & Conference Unit
+                </div>
+                <div class="project-row-loc">River Walk, Gaborone</div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Botswana</div>
+                <div class="project-row-title">Shopping Centre</div>
+                <div class="project-row-loc">Gaborone</div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Botswana</div>
+                <div class="project-row-title">
+                  Offices & Retail Space, Botswana Council of Churches
+                </div>
+                <div class="project-row-loc">3,000 sqm, Gaborone</div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Botswana</div>
+                <div class="project-row-title">
+                  Sports Training Centre, Botswana Football Association
+                </div>
+                <div class="project-row-loc">
+                  National Stadium Site, Gaborone
+                </div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div></div>
+              <div>
+                <div class="project-row-tag">Botswana</div>
+                <div class="project-row-title">Office & Retail Development</div>
+                <div class="project-row-loc">
+                  1,500 sqm, for Former President & Lady Masire
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="container">
+          <h2 class="h2">Have a brief in mind?</h2>
+          <a href="contact.html" class="btn btn--light">
+            Start a conversation
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <img class="brand-mark" src="images/logo/jyga-mark.png" alt="" />
+            <span>jyga<small>Architects</small></span>
+          </a>
+          <p>
+            Jarrett-Yaskey, Garber &amp; Associates: Architects. A
+            Freetown-based practice designing for West Africa since 1978.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"
+              ><svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M6.94 5a2 2 0 11-4-.002 2 2 0 014 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48z"
+                /></svg
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" /></svg
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-heading">Navigate</p>
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="people.html">People</a>
+          <a href="news.html">News</a>
+          <a href="careers.html">Careers</a>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-heading">Offices</p>
+          <div class="footer-office">
+            <strong>Sierra Leone</strong>
+            <address>2 Main Motor Road, Congo Cross, Freetown</address>
+          </div>
+          <div class="footer-office">
+            <strong>Botswana</strong>
+            <address>DMD-Mosaic Architects, Plot 454, Ext. 4, Gaborone</address>
+          </div>
+          <div class="footer-office">
+            <strong>Liberia</strong>
+            <address>
+              Pan African Engineering Group, 10th Street, Monrovia
+            </address>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-heading">Contact</p>
+          <a href="tel:+23276628732">+232 76 628 732</a>
+          <a href="tel:+23225238761">+232 25 238 761</a>
+          <a href="mailto:jyga@jyga-architects.com">jyga@jyga-architects.com</a>
+        </div>
       </div>
-      <div class="footer-office">
-        <strong>Liberia</strong>
-        <address>Pan African Engineering Group, 10th Street, Monrovia</address>
+
+      <div class="container footer-bottom">
+        <p>
+          © <span data-year>2026</span> JYGA Architects. All rights reserved.
+        </p>
+        <p><a href="#main">Back to top ↑</a></p>
       </div>
-    </div>
+    </footer>
 
-    <div class="footer-col">
-      <p class="footer-heading">Contact</p>
-      <a href="tel:+23276628732">+232 76 628 732</a>
-      <a href="tel:+23225238761">+232 25 238 761</a>
-      <a href="mailto:jyga@jyga-architects.com">jyga@jyga-architects.com</a>
-    </div>
-  </div>
-
-  <div class="container footer-bottom">
-    <p>© <span data-year>2026</span> JYGA Architects. All rights reserved.</p>
-    <p><a href="#main">Back to top ↑</a></p>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

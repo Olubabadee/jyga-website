@@ -1,0 +1,186 @@
+/* ==========================================================================
+   JYGA ARCHITECTS — leed-project.css
+   A standalone, editorial treatment for the LEED case-study page — meant to
+   look and feel distinct from the standard project-detail template.
+   Load this ALONGSIDE the existing css/style.css (which still supplies the
+   shared header/nav/footer, buttons, tokens, etc). Add this one line to
+   project-leed.html's <head>, after the style.css link:
+
+     <link rel="stylesheet" href="css/leed-project.css">
+   ========================================================================== */
+
+/* ---------- Hero ---------- */
+.leedpg-hero {
+  padding: calc(var(--nav-h) + 3.5rem) 0 5rem;
+  background: var(--stone);
+  overflow: hidden;
+}
+.leedpg-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: center;
+}
+@media (max-width: 900px) { .leedpg-hero-grid { grid-template-columns: 1fr; } }
+
+.leedpg-eyebrow-rule {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1.4rem;
+}
+.leedpg-eyebrow-rule::before {
+  content: '';
+  width: 34px; height: 1px;
+  background: var(--navy);
+}
+
+.leedpg-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.2rem;
+}
+
+.leedpg-hero-images {
+  position: relative;
+  height: clamp(360px, 44vw, 520px);
+}
+.leedpg-hero-images img {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 30px 60px rgba(18,20,26,0.22);
+}
+.leedpg-hero-img-main {
+  width: 78%; height: 82%;
+  top: 0; right: 0;
+}
+.leedpg-hero-img-cert {
+  width: 46%; height: auto;
+  aspect-ratio: 4/3;
+  left: 0; bottom: 0;
+  border: 6px solid var(--paper);
+}
+
+/* ---------- About / highlights ---------- */
+.leedpg-about {
+  padding: clamp(4rem, 8vw, 6.5rem) 0;
+}
+.leedpg-about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 6vw, 5rem);
+}
+@media (max-width: 860px) { .leedpg-about-grid { grid-template-columns: 1fr; } }
+
+.leedpg-checklist { margin-top: 1.5rem; }
+.leedpg-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+.leedpg-checklist li:last-child { border-bottom: 1px solid var(--line); }
+.leedpg-checklist svg {
+  width: 20px; height: 20px;
+  color: var(--navy);
+  flex-shrink: 0;
+  margin-top: 0.3rem;
+}
+
+/* ---------- Alternating image/text row ---------- */
+.leedpg-feature-row {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+  padding: clamp(3rem, 6vw, 5rem) 0;
+}
+@media (max-width: 860px) { .leedpg-feature-row { grid-template-columns: 1fr; } }
+.leedpg-feature-row img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.leedpg-feature-row p { margin-top: 1rem; }
+
+/* ---------- Three-up mini grid ---------- */
+.leedpg-trio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding-top: clamp(3rem, 6vw, 5rem);
+  border-top: 1px solid var(--line);
+}
+@media (max-width: 760px) { .leedpg-trio { grid-template-columns: 1fr; } }
+.leedpg-trio-num {
+  font-family: var(--font-display);
+  color: var(--graphite-light);
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+.leedpg-trio h4 { font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 0.6rem; }
+.leedpg-trio p { font-size: 0.92rem; color: var(--graphite); }
+.leedpg-trio-note {
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  color: var(--graphite);
+}
+
+/* ---------- Full-bleed image break ---------- */
+.leedpg-break-img {
+  width: 100%;
+  max-height: 640px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- Mantra statement band ---------- */
+.leedpg-mantra {
+  background: var(--ink);
+  color: var(--white);
+  padding: clamp(4.5rem, 9vw, 7.5rem) 0;
+  text-align: center;
+}
+.leedpg-mantra .eyebrow { color: var(--gold); justify-content: center; display: flex; }
+.leedpg-mantra blockquote {
+  max-width: 26ch;
+  margin: 1.2rem auto 0;
+  font-family: var(--font-display);
+  font-weight: 360;
+  font-style: italic;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.3;
+}
+.leedpg-mantra p.leedpg-mantra-body {
+  max-width: 56ch;
+  margin: 1.6rem auto 0;
+  color: rgba(255,255,255,0.65);
+}
+
+/* ---------- Twin image finale ---------- */
+.leedpg-twin {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+@media (max-width: 700px) { .leedpg-twin { grid-template-columns: 1fr; } }
+.leedpg-twin img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+
+/* ---------- Closing CTA ---------- */
+.leedpg-cta {
+  padding: clamp(4rem, 8vw, 6rem) 0;
+  text-align: center;
+}
+.leedpg-cta h2 { max-width: 20ch; margin: 0 auto 1.6rem; }
+.leedpg-cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.leedpg-view-other {
+  display: block;
+  text-align: center;
+  margin-top: 1.4rem;
+  font-size: 0.85rem;
+  color: var(--graphite);
+  text-decoration: underline;
+}
