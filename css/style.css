@@ -485,6 +485,24 @@ p.lede {
     color 0.35s var(--ease),
     padding-left 0.35s var(--ease);
 }
+
+@media (max-width: 760px) {
+  .site-nav-overlay {
+    width: 100%;
+  }
+  .site-nav-overlay::before {
+    display: none;
+  }
+
+  .nav-overlay-links a {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+  .nav-overlay-links a .idx {
+    font-size: 0.65rem;
+  }
+}
+
 .nav-overlay-links a .idx {
   font-family: var(--font-sans);
   font-size: 0.72rem;
@@ -530,7 +548,7 @@ p.lede {
 
 @media (max-width: 700px) {
   .nav-overlay-links a {
-    font-size: 2.4rem;
+    font-size: 1.4rem;
     gap: 0.8rem;
   }
   .nav-overlay-foot {
@@ -2562,4 +2580,12 @@ section {
 .whatsapp-float:hover {
   transform: translateY(-3px);
   box-shadow: 0 9px 25px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 860px) {
+  .pd-meta-block,
+  .profile-toc {
+    position: static;
+    top: auto;
+  }
 }
