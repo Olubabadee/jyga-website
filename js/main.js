@@ -185,17 +185,80 @@
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   /* ---------- Contact form (static-site friendly placeholder) ---------- */
-  var contactForm = document.querySelector("[data-contact-form]");
+  // var contactForm = document.querySelector("[data-contact-form]");
+  // if (contactForm) {
+  //   contactForm.addEventListener("submit", function (e) {
+  //     e.preventDefault();
+  //     var note = contactForm.querySelector("[data-form-note]");
+  //     if (note) {
+  //       note.textContent =
+  //         "Thanks — your message has been noted. Wire this form up to Formspree, or your host\u2019s mail handler, before going live.";
+  //       note.hidden = false;
+  //     }
+  //     contactForm.reset();
+  //   });
+  // }
+
+  /* ---------- Web3Forms Contact Form ---------- */
+  var contactForm = document.querySelector(
+    'form[data-contact-form][action="https://api.web3forms.com/submit"]',
+  );
+
   if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
+    contactForm.addEventListener("submit", async function (e) {
       e.preventDefault();
+
       var note = contactForm.querySelector("[data-form-note]");
-      if (note) {
-        note.textContent =
-          "Thanks — your message has been noted. Wire this form up to Formspree, or your host\u2019s mail handler, before going live.";
-        note.hidden = false;
+      var submitBtn = contactForm.querySelector('button[type="submit"]');
+
+      // Validate required fields before sending
+      if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
       }
-      contactForm.reset();
+
+      // Prevent duplicate submissions
+      if (submitBtn.disabled) return;
+
+      submitBtn.disabled = true;
+
+      if (note) {
+        note.textContent = "Sending your message...";
+        note.hidden = false;
+        note.setAttribute("role", "status");
+      }
+
+      try {
+        var formData = new FormData(contactForm);
+
+        var response = await fetch(contactForm.action, {
+          method: "POST",
+          body: formData,
+        });
+
+        var result = await response.json();
+
+        if (!response.ok || !result.success) {
+          throw new Error(result.message || "Message could not be sent.");
+        }
+
+        // Only reset after successful submission
+        contactForm.reset();
+
+        if (note) {
+          note.textContent =
+            "Thank you! Your message has been sent successfully. Our team will get back to you soon.";
+        }
+      } catch (error) {
+        console.error("Contact form error:", error);
+
+        if (note) {
+          note.textContent =
+            "Sorry, your message could not be sent. Please try again or email us directly at jyga@jyga-architects.com.";
+        }
+      } finally {
+        submitBtn.disabled = false;
+      }
     });
   }
 
